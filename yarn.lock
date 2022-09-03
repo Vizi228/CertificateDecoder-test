@@ -1512,6 +1512,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@lapo/asn1js@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@lapo/asn1js/-/asn1js-1.2.3.tgz#a5b15a769cb31d550ccf9eed3725ffd83f47026b"
+  integrity sha512-6dWV0syRWrnZAcbygq/LRd9alZ5NIJVFTU4nmlbwJSigGh2O49nFFURcDP1KeKoxsXmxGfAPGj4soX1mrV2uAQ==
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"

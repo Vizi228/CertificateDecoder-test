@@ -1,38 +1,69 @@
-.App {
+.fullfill {
+  width: 650px;
+  height: 500px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.right-block{
+  width: 40%;
+}
+.left-block{
+  width: 40%;
+  border: 1px solid #000;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.droparea{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cert-data {
+  padding: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-block__items {
+  max-height: 250px;
+  overflow: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right-block__item {
+  border: 1px solid #000;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.right-block__item.active {
+  background-color: rgb(189, 186, 186);
+  opacity: 0.7;
+}
+.right-block__item.active::after {
+  content: '';
+  background-image: url('./assets/images/right-arrow.png');
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-size: cover;
+  right: 0px;
+  top: 6px;
+}
+.right-block__button {
+  border: 1px solid #000;
+  outline: none;
+  padding: 5px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
